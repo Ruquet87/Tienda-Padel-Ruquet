@@ -1,7 +1,20 @@
-const ItemListContainer = ({ saludo }) => {
+import { useState, useEffect } from "react";
+import { getProductos } from "../../Asycmocks";
+import ItemList from "../ItemList/ItemList";
+
+const ItemListContainer = () => {
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    getProductos()
+      .then((respuesta) => setProductos(respuesta))
+      .catch((error) => console.log(error));
+  }, []);
+
   return (
     <>
-      <h1>{saludo}</h1>
+      <h2 style={{ textAlign: "center" }}>Mis Productos</h2>
+      <ItemList productos={productos} />
     </>
   );
 };
