@@ -1,12 +1,21 @@
 import "./cartwidget.css";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CarritoContext } from "../../context/CarritoContext";
 
 const Cartwidget = () => {
-  const imgcarrito =
-    "https://thumbs.dreamstime.com/b/icono-de-l%C3%ADnea-carro-compra-trazo-negro-editable-trole-concepto-negocios-cestas-carrito-con-n%C3%BAmero-compras-vector-ilustraci%C3%B3n-170268189.jpg";
+  const { cantidadTotal } = useContext(CarritoContext);
 
   return (
     <div>
-      <img className="imgcarrito" src={imgcarrito} alt="Carrito de compras" />
+      <Link to="/cart">
+        <img
+          className="imgcarrito"
+          src="../../public/img/Carrito.jpg"
+          alt="carrito de compras"
+        />
+        {cantidadTotal > 0 && <strong>{cantidadTotal}</strong>}
+      </Link>
     </div>
   );
 };

@@ -6,7 +6,11 @@ const Navbar = () => {
   return (
     <header>
       <Link to="/">
-        <h1>Tienda de padel</h1>
+        <img
+          className="logo"
+          src="../../public/img/Logo.png"
+          alt="Logo Tienda de Padel"
+        />
       </Link>
       <nav>
         <ul>
