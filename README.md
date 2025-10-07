@@ -19,3 +19,5 @@ Este es un proyecto de ecomerce basico para un curso de React JS. es una app par
 -Realizar una orden de compra
 
 ## Dominio de Sitio
+
+https://locosxpadel.netlify.app/
