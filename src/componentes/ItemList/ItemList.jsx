@@ -5,7 +5,7 @@ const ItemList = ({ productos }) => {
   return (
     <div className="contenerdorProductos">
       {productos.map((item) => (
-        <Item {...item} />
+        <Item key={item.id} {...item} />
       ))}
     </div>
   );

@@ -6,7 +6,8 @@ import Navbar from "./componentes/navbar/navbar";
 import { CarritoProvider } from "./context/CarritoContext";
 import Cart from "./componentes/Cart/Cart";
 import Checkout from "./componentes/Checkout/Checkout";
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import { ToastContainer } from "react-toastify";
 const App = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </CarritoProvider>
+        <ToastContainer />
       </BrowserRouter>
     </>
   );
