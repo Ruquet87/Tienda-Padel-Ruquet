@@ -10,3 +10,9 @@ li {
   margin: 10px;
   cursor: pointer;
 }
+
+.estilo-enlace {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
