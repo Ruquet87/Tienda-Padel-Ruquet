@@ -25,7 +25,7 @@ const ItemDetail = ({ id, nombre, precio, img, stock, descripcion }) => {
       position: "top-center",
     });
   };
-
+  console.log("Valor de img recibido en ItemDetail:", img);
   return (
     <div className="ContenedorItem">
       <h2>{nombre}</h2>

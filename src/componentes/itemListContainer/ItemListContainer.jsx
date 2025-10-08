@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import { getProductos, getProductosPorCategoria } from "../../Asycmocks";
 import { db } from "../../services/config";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import ItemList from "../ItemList/ItemList";
@@ -31,14 +30,6 @@ const ItemListContainer = () => {
         setLoading(false);
       });
   }, [idCategoria]);
-
-  // useEffect(() => {
-  //   const funcionProductos = idCategoria
-  //     ? getProductosPorCategoria
-  //     : getProductos;
-  //   funcionProductos(idCategoria).then((res) => setProductos(res));
-  // }, [idCategoria]);
-
   return (
     <>
       <h2 style={{ textAlign: "center" }}>Mis Productos</h2>
