@@ -1,6 +1,6 @@
 # Locos X Padel
 
-Este es un proyecto de ecomerce basico para un curso de React JS. es una app para ver y comprar de accesorios e indumentaria de padel, los productos y ordenes se alojan en FireBase-FireStorare
+Este es un proyecto de ecomerce basico para un curso de React JS. es una app para ver, comprar accesorios e indumentaria de padel, los productos y ordenes se alojan en FireBase-FireStorare
 
 ## Tecnologias Utilizadas
 
